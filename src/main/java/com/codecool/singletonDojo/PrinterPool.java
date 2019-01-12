@@ -36,7 +36,7 @@ public class PrinterPool {
 
     private PrinterElement getAvailablePrinter(){
         PrinterElement printer= null;
-        for (int i = 0; i < printerElementInstances.length && printer == null; i++) {
+        for (int i = 0; i < printerElementInstances.length && printer == null; i++) { //TODO:with random number
             if (printerElementInstances[i].isAvailable()) {
                 printer = printerElementInstances[i];
             }
